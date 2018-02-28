@@ -16,5 +16,5 @@ def get_number():
 			print("You're being difficult, we'll use 43 as an example.")
 			return(43)
 
-main()
-print(user_number)
+
+print(main())
