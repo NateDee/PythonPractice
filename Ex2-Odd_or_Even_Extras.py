@@ -1,5 +1,10 @@
 #Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user.
 
+#Extras!
+#	1. If the number is a multiple of 4, print out a different message.
+#	2. Ask the user for two numbers: one number to check (call it num) and one number to divide by (check). 
+#		If check divides evenly into num, tell that to the user. If not, print a different appropriate message.
+
 def main():
 	user_number = get_number()
 	print(odd_or_even(user_number))
@@ -17,7 +22,9 @@ def get_number():
 			return(43)
 
 def odd_or_even(user_number):
-	if (user_number % 2 == 0):
+	if (user_number % 4 == 0):
+		return(str(int(user_number)) + " is even, and divisible by 4!")
+	elif (user_number % 2 == 0):
 		return(str(int(user_number)) + " is even!")
 	else:
 		return(str(int(user_number)) + " is odd!")
